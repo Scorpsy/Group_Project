@@ -22,11 +22,11 @@ def main() -> None:
                         user_agent = os.getenv('user_agent'))
           
 
-    data = get_data(reddit,'investing','TSLA','all')
+    data = get_data(reddit,'stocks','AAPL','all')
 
-    print_csv('investing_TSLA.csv',data)
+    print_csv('stocks_AAPL.csv',data)
 
-    df = pd.read_csv('investing_TSLA.csv')
+    df = pd.read_csv('stocks_AAPL.csv')
     print(df)
 
 
