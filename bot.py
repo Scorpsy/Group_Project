@@ -24,9 +24,9 @@ def main() -> None:
 
     data = get_data(reddit,'investing','TSLA','all')
 
-    print_csv('investing.csv',data)
+    print_csv('investing_TSLA.csv',data)
 
-    df = pd.read_csv('investing.csv')
+    df = pd.read_csv('investing_TSLA.csv')
     print(df)
 
 
@@ -34,15 +34,13 @@ def get_data(reddit, sub, ticker, time_frame):
     stock = reddit.subreddit(sub)
     data = []
 
-    stock_search = stock.search(query=ticker, time_filter = time_frame)
-    #print(size(investing_search))
+    stock_search = stock.search(query=ticker, time_filter = time_frame, limit=None)
     for submission in stock_search:
         if not submission.stickied:
             time = submission.created_utc
             utc_time = get_date(time)
 
             post = Posts(submission.title,utc_time,submission.ups,submission.upvote_ratio)
-
 
             data.append(post)
 
