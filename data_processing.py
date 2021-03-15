@@ -6,13 +6,13 @@ import numpy as np
 
 def main() -> None:
 
-    googl = yf.Ticker('FB')
+    googl = yf.Ticker('TSLA')
     fb_df = googl.history(period='max')
 
     fb_df = rolling_aves2(fb_df)
 
     fb_df = date_time_prep(fb_df)
-    fb_df.to_csv('fb_data.csv')
+    fb_df.to_csv('tsla_data.csv')
 
     #fb_df = future_close_setup(fb_df, 5)
     #print(fb_df.head())
