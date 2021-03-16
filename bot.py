@@ -22,11 +22,11 @@ def main() -> None:
                         user_agent = os.getenv('user_agent'))
           
 
-    data = get_data(reddit,'stocks','AAPL','all')
+    data = get_data(reddit,'wallstreetbets','TSLA','all')
 
-    print_csv('stocks_AAPL.csv',data)
+    print_csv('wsb_TSLA.csv',data)
 
-    df = pd.read_csv('stocks_AAPL.csv')
+    df = pd.read_csv('wsb_TSLA.csv')
     print(df)
 
 
@@ -35,12 +35,13 @@ def get_data(reddit, sub, ticker, time_frame):
     data = []
 
     stock_search = stock.search(query=ticker, time_filter = time_frame, limit=None)
+
     for submission in stock_search:
         if not submission.stickied:
             time = submission.created_utc
             utc_time = get_date(time)
 
-            post = Posts(submission.title,utc_time,submission.ups,submission.upvote_ratio)
+            post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
 
             data.append(post)
 
@@ -49,10 +50,10 @@ def get_data(reddit, sub, ticker, time_frame):
 def print_csv(filename: str, data):
     with open(filename, 'w', newline="") as f:
         thewriter = csv.writer(f)
-        thewriter.writerow(['Date','Title','Upvote','Upvote Ratio'])
+        thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
 
         for d in data:
-            thewriter.writerow([d.date, d.title, d.upvote, d.upvote_ratio])
+            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
 
 
 def get_date(created):
