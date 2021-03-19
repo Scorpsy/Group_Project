@@ -32,6 +32,7 @@ def main() -> None:
 
 def get_data(reddit, sub, ticker, time_frame):
     stock = reddit.subreddit(sub)
+
     data = []
 
     stock_search = stock.search(query=ticker, time_filter = time_frame, limit=None)
