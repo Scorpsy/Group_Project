@@ -46,17 +46,35 @@ def print_csv(data,sub,tick):
         
         match = [x for x in tick if x in d.title]
         if match:
-            filename =f"{sub}_{match[0]}_r.csv"
 
-            if os.path.isfile("datasets/"+filename):
-                with open("datasets/"+filename, 'a', newline="") as f:
-                    thewriter = csv.writer(f)
-                    thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+            if len(match) > 1:
+                for comp in match:
+                    filename =f"{sub}_{comp}_r.csv"
+
+                    if os.path.isfile("datasets/"+filename):
+                        with open("datasets/"+filename, 'a', newline="") as f:
+                            thewriter = csv.writer(f)
+                            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+                    else:
+                        with open("datasets/"+filename, 'w', newline="") as f:
+                            thewriter = csv.writer(f)
+                            thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
+                            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+
             else:
-                with open("datasets/"+filename, 'w', newline="") as f:
-                    thewriter = csv.writer(f)
-                    thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
-                    thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+                filename =f"{sub}_{match[0]}_r.csv"
+
+                if os.path.isfile("datasets/"+filename):
+                    with open("datasets/"+filename, 'a', newline="") as f:
+                        thewriter = csv.writer(f)
+                        thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+                else:
+                    with open("datasets/"+filename, 'w', newline="") as f:
+                        thewriter = csv.writer(f)
+                        thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
+                        thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
 
 
 def get_data(reddit, sub):
