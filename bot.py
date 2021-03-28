@@ -21,7 +21,6 @@ def main() -> None:
                         password = os.getenv('password'),
                         user_agent = os.getenv('user_agent'))
 
-
     tick = []
 
     with open("tickers_n.csv") as csvfile:
@@ -29,10 +28,7 @@ def main() -> None:
         for row in tickers: 
             tick.append(row[0])
 
-
     data,sub = get_data(reddit,'investing')
-    #data_p = data_processing(data,sub)
-    #init_csv('investing_FB_r.csv')
     print_csv(data,sub, tick)
 
     #df = pd.read_csv('tickers_n.csv',index=False)
@@ -52,12 +48,12 @@ def print_csv(data,sub,tick):
         if match:
             filename =f"{sub}_{match[0]}_r.csv"
 
-            if os.path.isfile(filename):
-                with open(filename, 'a', newline="") as f:
+            if os.path.isfile("datasets/"+filename):
+                with open("datasets/"+filename, 'a', newline="") as f:
                     thewriter = csv.writer(f)
                     thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
             else:
-                with open(filename, 'w', newline="") as f:
+                with open("datasets/"+filename, 'w', newline="") as f:
                     thewriter = csv.writer(f)
                     thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
                     thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
