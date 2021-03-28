@@ -1,0 +1,141 @@
+Date,Title,Selftext,Upvote,Upvote Ratio
+2021-03-23 10:15:10,Microsoft ($MSFT) DD - Sitting on a gold mine,"Hi guys!
+
+Today I'm going to be covering a massive tech-giant called Microsoft. They have a market cap of 1.74T and are the second-largest company in the US. I'm going to do a deep-dive into the fundamentals and catalysts that could make Microsoft a good buy. As always, a TL;DR is at the bottom and if you have any companies you want to see me do a DD on, leave them in the comments.
+
+**Business**
+
+Microsoft is a well-known diversified technology company. Most consumers are familiar with their windows operating system, which has a 75% desktop OS market share as of 2020 ***\[1\]***, their Microsoft Surface Laptop, which they've advertised aggressively, and their Office 365 productivity suite, which is commonly used in schools and businesses alike.
+
+Their operations can be broken up into 3 broad categories: Productivity and Business Processes (32.44% of revenue),  Intelligent Cloud (33.82% of revenue), and Personal Computing (33.74% of revenue). Let's break these segments down!
+
+**Productivity and Business Processes**
+
+This segment includes Microsoft's Office product line, LinkedIn, and Dynamics.
+
+Office saw stellar growth during the pandemic. In Microsoft's 10-K filed in June of 2020, we can see that Office revenue grew by 4.5B or 15%. Office accounts for 64.63% of this segment's revenue. I don't see all that much future growth potential here. Google's productivity suite will cut into margins and makes the moat here very small. While Office Commercial could be alright, Office Consumer will probably get blown out of the water by Google's free product offering.
+
+LinkedIn is another pandemic out-performer. This product grew revenue 1.3B or 20% in 2020 and currently accounts for 14% of this segment's revenue. There's a lot of unrealized potential here and I want to go a little in-depth here because I think this is overlooked by a lot of people.
+
+Think about the amount of data LinkedIn has for a second. You **willingly** enter in: your current place of residence, your age, your current place of work, your past working experience, your prior education, your interests, what skills you have, etc. This is a data *GOLDMINE.* All the information Google spends billions on developing algos to infer about you is offered up to Microsoft by over 740 million members **\[2\]**. If Microsoft identifies this as an opportunity they'd be willing to pursue, it could be huge.
+
+Finally, there's Microsoft Dynamics. I feel so-so about this product. It has fierce competitors who dominate the entire CRM industry (namely Salesforce with 19%+ market share), and I just don't think they have a superior offering here.
+
+**Intelligent Cloud**
+
+This is what many people end up talking about the most when it comes to Microsoft. As someone with a pretty decent amount of cloud knowledge, I can say with confidence it'll be a two-horse game in the future with AWS and Azure dominating. The problem with AWS is actually the fact that they're a subsidiary of Amazon!
+
+If you're a retailer and you're looking to pick a cloud provider, you can't use AWS because you'll be supporting a direct competitor of yours. As a result, many of these companies will end up taking their money to Microsoft. It's also worth noting that the government has shown a preference to use Azure in the past when it comes to military contracts.
+
+**Personal Computing**
+
+This segment includes Windows OS, the Surface Laptop, Xbox, and their Search engines.
+
+I don't expect that much growth here. Windows will continue to grow by 2-4%, their search engine will probably stagnate (I'm kind of shocked people actually use Edge/Bing), Xbox will continue to lose ground to Playstation, and Surface's growth will slow.
+
+**Business TL;DR**
+
+Future growth will be driven by Azure and perhaps LinkedIn.
+
+**Revenues**
+
+Microsoft brought in revenue of 153.28B in FY 2020. This represents a 14.18% gain YoY, a 48.90% 3 year gain, and a 74.02% increase from 5 years ago. These increases are very impressive considering the age and size of Microsoft.
+
+Switching over to Net Income, we see a 2020 total of 51.31B. This is up 15.77% YoY, 271% in the last 3 years, and up 338% since 5 years ago. My takeaway here is similar to the one I made for revenue. The key difference here is that NI has been much more inconsistent.
+
+**Margins**
+
+Microsoft currently has a net margin of 33.47%, the highest it's been in more than 15 years (how far back my data goes). This margin compares well with Apple's 21.73%, Amazon's 5.53%, Netflix's 11.05%, and Google's 22.06%. The only FAANG company that has a higher margin than Microsoft is Facebook with a 33.90% margin. Seeing as Facebook operates as a software company only, I'm not surprised.
+
+**Assets/Liabilities**
+
+||Total Assets|Total Liabilities|Cash on Hand|Long-term debt|
+|:-|:-|:-|:-|:-|
+|Value ($)|304B|174B|131B|55B|
+
+Microsoft currently has a Debt/Equity ratio of 0.42 and a current ratio of 2.58. In case you're unaware, the current ratio is a way to measure how able a company is to pay back debt. A current ratio of over 1.5 is generally considered good.
+
+It's also worth noting that Microsoft's Cash on Hand can cover its short-term liabilities, which is always a plus.
+
+**Free Cash Flow/Buybacks**
+
+As of 6/30/20 (the last time they filed their 10K), Microsoft generates 45.25B in Free Cash Flow. This represents an 18.22% gain YoY, a 44.16% 3 year gain, and a 90.67% 5 year gain. Because Microsoft pays a below-market dividend, they end up spending that Free Cash Flow on share buybacks. Since FY 2019, Microsoft has spent more on share buybacks than they have on dividends ***\[3\]*** and has netted shareholders billions.
+
+**Price Ratios/Other**
+
+|Ratio|Microsoft|Apple|Google|Amazon|""Good Value"" for Sector|
+|:-|:-|:-|:-|:-|:-|
+|PE Ratio (TTM)|34.33x|32.50x|34.53x|73.62x|<30x|
+|P/B Ratio|13.34x|30.42x|6.14x|16.58x|<7x|
+|P/S Ratio|11.78x|7.28x|8.17x|4.11x|<7x|
+|P/FCF Ratio|35.79x|26.53x|34.75x|51.15x|<30x|
+|ROE|42.19%|90.59%|19.03%|27.07%|\>25%|
+|Leverage|2.5x|4.6x|1.4x|3.4x|Depends|
+|3-year revenue growth|48.90%|23.06%|64.66%|116.85%|Depends|
+
+**PE Ratio**
+
+I said a ""good"" number for the sector was under 30x. I usually look for PEs under 15-20x, but you do have to pay for growth. In this section, nobody was under this threshold. Considering we're in a mature bull-market, I can't say I'm surprised. With that being said, Microsoft narrowly beat out Google to have the second-lowest PE at 34.33x.
+
+**P/B Ratio**
+
+I said a good P/B Ratio for this sector was under 7x. Very high, I know, but keep in mind these are good values for the *technology* sector. That being said, only Google came in under my good value while the rest weren't even close. Microsoft had the second-lowest P/B at 13.34x. So far, not so good.
+
+**P/S Ratio**
+
+I thought a good P/S ratio here would be under 7x (same as the P/B cutoff). This time, we saw both Google and Amazon qualify with Apple narrowly missing the cutoff. Microsoft ended up having the highest P/S ratio at 11.78x. Overall, P/S ratios were actually decent.
+
+**P/FCF Ratio**
+
+I identified under 30x to be a good multiple for this sector. Sadly, we're right back to where we were before, with only Apple qualifying and the rest being pretty far off. Microsoft had the second-worst P/FCF ratio at 35.79x.
+
+**ROE/Leverage/Revenue Growth**
+
+Microsoft: If you're going to have poor price ratios, the least you can do is be efficient at generating capital. A 42.19% ROE while maintaining reasonable leverage considering their revenue growth rate is impressive. This is one area where Microsoft actually looks pretty attractive.
+
+Apple: Not a big fan of the numbers here. They strike me as over-levered and a future slow-grower.
+
+Google: They have the lowest ROE of the bunch, but they're also the least levered. Considering the amount of growth they've had, the only way I could get behind this little leverage would be if management expected stagnation over the coming years.
+
+Amazon: Amazon is very solid in this area. They have a reasonable amount of leverage considering expected future growth and are pretty efficient at generating capital.
+
+Overall, Microsoft is good at generating capital and is well-levered considering expected and past growth rates.
+
+**Moderate DCF Valuation**
+
+Assuming a 15% 5-year revenue CAGR, an 8% discount rate, a 4% perpetual growth rate, and a 46% EBITDA Margin, Microsoft has an FV of $212.22 (upside of -10.1%).
+
+**Bull Case**
+
+In my bull case, I'm assuming Microsoft successfully monetizes LinkedIn, and Azure growth is faster than expected. I'm assuming a 17% 5-year revenue CAGR, an 8% discount rate, a 4% perpetual growth rate, and a 47% EBITDA Margin. Using these parameters, I got an FV of $270.80 (14.8% upside).
+
+I think the FV is probably between the current price and this bull case.
+
+**Bear Case**
+
+Don't worry, this won't be a Cathie Wood bear case!
+
+In this scenario, I'm assuming Azure loses market share, and Office growth stagnates. I think fair parameters in this scenario would be a 7% revenue CAGR, an 8% discount rate, a 4% perpetual growth rate, and a 45% EBITDA Margin. In this scenario, I got an FV of $168.89 (-28.4% upside).
+
+I find this bear case highly unlikely. In my opinion, the idea that Azure growth will slow is misguided.
+
+**Risks**
+
+1. **Office loses market share:** I've been talking about this one throughout the DD because I think it's probably a very likely scenario. The average consumer is going to prefer the Google Productivity Suite over Office because it's free and offers products equivalent in quality. If this were to happen, Office Commercial (Office for businesses and schools) would probably remain relatively intact.
+2. **Azure gets trounced**: As I said in the previous section, I find this scenario very unlikely. It would require GCP being worth a dang or everyone snuggling up to Amazon. As I said before, a lot of companies won't go with AWS because it would be supporting a competitor and I don't think the people running GCP will be able to get their ducks in a row.
+3. **Rotation into Value:** If bond yields were to continue rising rapidly, a flight to safety could ensue that would cause a selloff in tech stocks such as Microsoft.
+4. **Regulation:** While I don't see any regulation risk for Microsoft in particular, if any of the FAANG stocks were to get hit with an anti-trust violation, it would send big-cap tech stocks into a tailspin.
+
+**Conclusion/TL;DR**
+
+While Microsoft is a great company with large amounts of growth ahead of it, the current valuation is frothy and there isn't enough of a margin of safety to justify an investment.
+
+**Sources**
+
+[**\[1\] = Microsoft Windows Figure**](https://www.statista.com/statistics/218089/global-market-share-of-windows-7/)
+
+[**\[2\] = LinkedIn User Number Figure**](https://about.linkedin.com/#:~:text=About%20LinkedIn)
+
+[**\[3\] = Share Buyback/Dividend Comparison**](https://www.microsoft.com/en-us/Investor/earnings/trended/cash-returned.aspx)
+
+**Edit:** Hey guys, thanks for all the support. I thought I'd clarify a couple of things and revise some of my statements. First of all, I was totally wrong about Xbox. Gamepass, their acquisitions of IP, and discord integration will be highly beneficial. I apologize for overlooking that. Secondly, I would like to clarify my statements about Office. I was talking about GS taking market share from Office Consumer NOT Office Commercial. I feel as if many regular people are willing to trade computational power in exchange for not having to pay. As far as I'm concerned, Office Commercial has a mile-long moat with crocodiles in it.",1763,0.95
