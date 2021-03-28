@@ -71,9 +71,9 @@ def get_data(reddit, sub):
 
             todays_d = dt.date.today()
 
-            #if utc_time.date() == todays_d:
-            post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
-            data.append(post)
+            if utc_time.date() == todays_d:
+                post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
+                data.append(post)
 
     return data,sub
 
