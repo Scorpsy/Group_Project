@@ -20,41 +20,98 @@ def main() -> None:
                         username =  os.getenv('username'),
                         password = os.getenv('password'),
                         user_agent = os.getenv('user_agent'))
-          
-
-    data = get_data(reddit,'wallstreetbets','TSLA','all')
-
-    print_csv('wsb_TSLA.csv',data)
-
-    df = pd.read_csv('wsb_TSLA.csv')
-    print(df)
 
 
-def get_data(reddit, sub, ticker, time_frame):
-    stock = reddit.subreddit(sub)
+    tick = []
 
-    data = []
+    with open("tickers_n.csv") as csvfile:
+        tickers = csv.reader(csvfile)
+        for row in tickers: 
+            tick.append(row[0])
 
-    stock_search = stock.search(query=ticker, time_filter = time_frame, limit=None)
+    print(tick)
 
-    for submission in stock_search:
-        if not submission.stickied:
-            time = submission.created_utc
-            utc_time = get_date(time)
+    #data,sub = get_data(reddit,'investing')
+    #data_p = data_processing(data,sub)
+    #init_csv('investing_FB_r.csv')
+    #print_csv(data,sub)
 
-            post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
+    #df = pd.read_csv('tickers_n.csv',index=False)
+    #print(df)
 
-            data.append(post)
-
-    return data
-
-def print_csv(filename: str, data):
+def init_csv(filename):
     with open(filename, 'w', newline="") as f:
         thewriter = csv.writer(f)
         thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
 
-        for d in data:
-            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+def print_csv(data,sub):
+
+    for d in data:
+        
+        if 'TSLA' in d.title:
+            filename = f"{sub}_TSLA_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+        elif 'MSFT' in d.title:
+            filename = f"{sub}_MSFT_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+        elif 'GOOG' in d.title:
+            filename = f"{sub}_GOOG_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+        elif 'AAPL' in d.title:
+            filename = f"{sub}_AAPL_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+        elif 'AMZN' in d.title:
+            filename = f"{sub}_AMZN_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+        elif 'FB' in d.title:
+            filename = f"{sub}_FB_r.csv"
+            with open(filename, 'a', newline="") as f:
+                thewriter = csv.writer(f)
+                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+
+
+
+def data_processing(data,tickers):
+    data_p = []
+    for d in data:
+        if any(word in d.title for word in tickers):
+            data_p.append(d)
+
+    return data_p
+
+def get_data(reddit, sub):
+    stock = reddit.subreddit(sub).new()
+
+    data = []
+
+    for submission in stock:
+        if not submission.stickied:
+            time = submission.created_utc
+            utc_time = get_date(time)
+
+            todays_d = dt.date.today()
+
+            #if utc_time.date() == todays_d:
+            post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
+            data.append(post)
+
+    return data,sub
 
 
 def get_date(created):
