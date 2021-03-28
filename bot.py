@@ -29,12 +29,11 @@ def main() -> None:
         for row in tickers: 
             tick.append(row[0])
 
-    print(tick)
 
-    #data,sub = get_data(reddit,'investing')
+    data,sub = get_data(reddit,'investing')
     #data_p = data_processing(data,sub)
     #init_csv('investing_FB_r.csv')
-    #print_csv(data,sub)
+    print_csv(data,sub, tick)
 
     #df = pd.read_csv('tickers_n.csv',index=False)
     #print(df)
@@ -45,55 +44,24 @@ def init_csv(filename):
         thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
 
 
-def print_csv(data,sub):
+def print_csv(data,sub,tick):
 
     for d in data:
         
-        if 'TSLA' in d.title:
-            filename = f"{sub}_TSLA_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+        match = [x for x in tick if x in d.title]
+        if match:
+            filename =f"{sub}_{match[0]}_r.csv"
 
-        elif 'MSFT' in d.title:
-            filename = f"{sub}_MSFT_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+            if os.path.isfile(filename):
+                with open(filename, 'a', newline="") as f:
+                    thewriter = csv.writer(f)
+                    thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+            else:
+                with open(filename, 'w', newline="") as f:
+                    thewriter = csv.writer(f)
+                    thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
+                    thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
 
-        elif 'GOOG' in d.title:
-            filename = f"{sub}_GOOG_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
-
-        elif 'AAPL' in d.title:
-            filename = f"{sub}_AAPL_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
-
-        elif 'AMZN' in d.title:
-            filename = f"{sub}_AMZN_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
-
-        elif 'FB' in d.title:
-            filename = f"{sub}_FB_r.csv"
-            with open(filename, 'a', newline="") as f:
-                thewriter = csv.writer(f)
-                thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
-
-
-
-def data_processing(data,tickers):
-    data_p = []
-    for d in data:
-        if any(word in d.title for word in tickers):
-            data_p.append(d)
-
-    return data_p
 
 def get_data(reddit, sub):
     stock = reddit.subreddit(sub).new()
