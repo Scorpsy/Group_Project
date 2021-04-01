@@ -51,30 +51,29 @@ def print_csv(data,sub,tick):
                 for comp in match:
                     filename =f"{sub}_{comp}_r.csv"
 
-                    if os.path.isfile("datasets/"+filename):
-                        with open("datasets/"+filename, 'a', newline="") as f:
+                    if os.path.isfile(f"datasets/{sub}/"+filename):
+                        with open(f"datasets/{sub}/"+filename, 'a', newline="") as f:
                             thewriter = csv.writer(f)
-                            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+                            thewriter.writerow([d.date,match, d.title,d.selftext, d.upvote, d.upvote_ratio])
                     else:
-                        with open("datasets/"+filename, 'w', newline="") as f:
+                        with open(f"datasets/{sub}/"+filename, 'w', newline="") as f:
                             thewriter = csv.writer(f)
-                            thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
-                            thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
-
+                            thewriter.writerow(['Date','Tickers','Title','Selftext','Upvote','Upvote Ratio'])
+                            thewriter.writerow([d.date,match, d.title,d.selftext, d.upvote, d.upvote_ratio])
 
             else:
 
                 filename =f"{sub}_{match[0]}_r.csv"
 
-                if os.path.isfile("datasets/"+filename):
-                    with open("datasets/"+filename, 'a', newline="") as f:
+                if os.path.isfile(f"datasets/{sub}/"+filename):
+                    with open(f"datasets/{sub}/"+filename, 'a', newline="") as f:
                         thewriter = csv.writer(f)
-                        thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+                        thewriter.writerow([d.date,match, d.title,d.selftext, d.upvote, d.upvote_ratio])
                 else:
-                    with open("datasets/"+filename, 'w', newline="") as f:
+                    with open(f"datasets/{sub}/"+filename, 'w', newline="") as f:
                         thewriter = csv.writer(f)
                         thewriter.writerow(['Date','Title','Selftext','Upvote','Upvote Ratio'])
-                        thewriter.writerow([d.date, d.title,d.selftext, d.upvote, d.upvote_ratio])
+                        thewriter.writerow([d.date,match, d.title,d.selftext, d.upvote, d.upvote_ratio])
 
 
 def get_data(reddit, sub):
