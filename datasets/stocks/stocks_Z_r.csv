@@ -1,0 +1,122 @@
+Date,Title,Selftext,Upvote,Upvote Ratio
+2021-03-31 21:13:42,['Z'],[DD] SKLZ - Disagreeing with Cathie Wood,"Cathie Wood seems bullish on SKLZ. I disagree and wanted to write up why. So, here we go.
+
+DISCLAIMER: Not financial advise. I could be wrong. I'm a random internet person. Do your own research and trust yourself.
+
+---
+
+**The Basics**
+---
+
+Skillz is an online platform for creating mobile game tournaments with monetary prize pools. They do not make any games themselves, rather, they host the platform to create tournaments with monetary prize pools. Their actual *product* is an SDK for developers to use ([source](https://www.skillz.com/how-it-works/)). Side note: an SDK is pre-written code that someone can use within their code base to implement certain functionality, in this case, it is for the tournament capabilities.
+
+Current Share Price: $19
+
+Current Valuation: $7.4B
+
+Latest Annual Revenues: $230M
+
+**What is so exciting about SKLZ?**
+---
+
+The North American mobile gaming market is $21.9B with a lot of expansion expected ([source](https://www.statista.com/topics/1906/mobile-gaming/)). The global gaming market is even juicier at $160B+ ([source](https://www.dotcominfoway.com/blog/infographic-mobile-game-market-trends-2020/)). Not only this, but gambling is on the rise and expected to be an emerging industry at $3.2B for the USA ([source](https://g-mnews.com/sports-betting-and-igaming-outlook-in-the-united-states/)). With such juicy markets, you can tell why people are excited about the prospects of a new entrant poised to take advantage of these trends. There's only one problem...
+
+**SKLZ is neither a game company nor a gambling company**
+---
+
+In a lot of DD that I see, they are comparing SKLZ valuation with other gaming companies or gambling companies. However, fundamentally, SKLZ does not match any of these.
+
+> SKLZ is not a gaming company
+
+SKLZ does not make any games itself. It is reliant on 3rd party independent developers to create games and monetize them. I'm not saying this is a bad thing. SKLZ has consistently gotten popular games onto its platform. My only point here is that **while SKLZ can ride overall mobile gaming trends, you cannot compare SKLZ to other mobile gaming companies**. It's comparing apples to oranges. Thus, any DD that relies on this as a method of valuation is fundamentally flawed.
+
+> SKLZ is not a gambling company
+
+SKLZ, as its name suggests, is skill-based matchmaking for money. The majority of people *lose* in this model. While its games may incorporate chance within them, the very purpose of SKLZ's product is that people **compete** for money. This is as much gambling as a League of Legends tournament is. Once more, this isn't a negative, I just want to say that any DD ([like this one](https://www.fool.com/investing/2021/03/22/3-gambling-stocks-poised-for-a-bull-run/)) relying on this comparison or expecting SKLZ to ride on the iGaming tailwinds is invalid.
+
+Even SKLZ makes comparisons like [this](https://imgur.com/WHnWUvh). They should know better.
+
+**So how do we correctly value SKLZ then?**
+---
+
+SKLZ attempts to capture a portion of the mobile gaming market. Now what is this portion?
+
+- Age range: 18-40 (https://imgur.com/iPARna5)
+
+- Simple, non-AAA games ([see list of current games as source](https://games.skillz.com/))
+
+- Competitive multiplayer games
+
+All these, I consider bad for the company. 
+
+So, let's dig deeper into how I came up with this list and what it means for SKLZ. For the purposes of this DD, I'll focus primarily on USA where SKLZ has its most business. Obviously, they want to expand internationally, but there are issues with that which I'll later discuss.
+
+**Age**
+
+The actual target market SKLZ wants to be in is gamers age 45+ ([source](https://www.mmaglobal.com/research/myth-busting-mobile-gaming-demographics)).
+
+https://imgur.com/YDAOoq7
+
+> The significance of the older gaming consumer is further reinforced by research from the mobile gaming community, MocoSpace. The findings of this study reveal a direct correlation between the amounts of money spent on virtual goods within social games and gamer age - the older the gamer, the more they spend. Based on the study, 70% of all the gamers over 45 years bought virtual goods.
+
+Furthermore, in terms of population, gamers 18-45 years old have about the same number of people as gamers 45+ ([source](https://www.statista.com/statistics/189582/age-of-us-video-game-players-since-2010/)). This means that the lion's share of the opportunity of SKLZ is locked away in a target audience that they have failed to reach. Obviously, they can try to reach this audience, but this brings me back to one of my earlier points: SKLZ is not a mobile gaming company. They don't get to decide who uses their platform or not. It's up to other game devs to do so and by the prevalence of their current demographic, we already know who SKLZ game devs caters towards.
+
+Even as we talk about the growth of mobile gaming, most of that growth is captured in the 45+ age range as well as the under 18 age range ([source](https://www.emarketer.com/content/more-people-over-age-of-45-started-mobile-gaming-2020-than-any-other-age-group)).
+
+My overall point is this: while SKLZ will certainly benefit from mobile gaming trends, it will not benefit as much as investors think it will. Its growth is overstated from a fundamental misunderstanding of the actual mobile gaming market.
+
+**Simple, non-AAA games**
+
+My first introduction to SKLZ was when they announced their NFL partnership. One thing that a lot of people thought was that some awesome football-based, Madden clone would use the SKLZ platform ([source](https://www.reddit.com/r/stocks/comments/lcn02f/your_thoughts_on_sklz/)). People think that SKLZ is going to go into the esports market which is plain wrong. SKLZ, on their own website, says that they built their platform for competitors left out of the esports market!
+
+Furthermore, money-based tournaments is not a new idea. While SKLZ has a good implementation of this idea, AAA developers have this figured out already. Just look at League of Legends, Call of Duty, or any other current esport out there. They all have online tournaments with monetary prizes. No AAA developers would use SKLZ when SKLZ takes 18% of the gross.
+
+For a small-time developer with a prize pool of $100, that's only $18. But imagine a prize pool of $2.34M ([League of Legend's 2020 prize pool](https://www.statista.com/statistics/749024/league-of-legends-championships-prize-pool/#:~:text=In%202020%2C%20the%20LoL%20World,2.23%20million%20a%20year%20earlier.)). Why would they spend $300k+ on licensing when they can build a similar product for $500k and use it next year as well? Obviously, this isn't a perfect example, but my point still stands: **AAA developers can imitate SKLZ's platform cheaply**.
+
+**Competitive multiplayer games**
+
+Obviously, SKLZ can't exist in single player games. Nor can it exists in non-competitive games. If we look at the popularity of mobile games by type, you'll see...
+
+https://imgur.com/AP4sKzA
+
+That player vs player games is among the least played. Not to say its not played, but it's certainly towards the bottom. Not only that, if you look at the most popular mobile games currently available, you'll notice some big name competitive multiplayer mobile games on that list ([source](https://en.wikipedia.org/wiki/List_of_most-played_mobile_games_by_player_count)). What this means is that the 15% available market is already being eaten up by AAA games which we already know SKLZ has no access to.
+
+In terms of the popularity of their games, it really worries me that for the past 5 years, they have coasted off the same 5 games. From their own investor presentation, they say this though they claim its a positive:
+
+https://imgur.com/byehp8r
+
+Notice the lack of new additions to their popular games. They seemed to have found a few breakout games early and haven't been able to move past them. Those games are losing popularity over the years and SKLZ will need new ones to bolster their business. They've had 5 years to do it, they haven't.
+
+**In conclusion...**
+---
+
+Based upon the points above, I believe investors expect unrealistic growth from SKLZ and thus, its current stock is overvalued. All analysis I've seen so far have been flawed from a fundamental misunderstanding of SKLZ as a company and the sole product they offer.
+
+So, what do I think is a fair valuation?
+
+Well, let's look at the market they serve. Gaming in the US is worth $21.9B currently. Their target age range of 18-40 captures ~50% of that, though this age range spends less money so we'll bring that number down to 40% (personal estimate). The type of game they need is 15% of this market of which 75% (personal estimate) is captured by AAA games which they don't have access to. Thus if we do the math, their current business model can capture:
+
+**$21.9B * 40% * 15% * 25% = 0.3285B or $328.5M.**
+
+Their current revenue is $230M (already close to capturing the max value) with promises to double next year and again the year after. The only way this is possible is if they expand their age range to gamers 45+, but remember, SKLZ does not control this at all. It's up to the game devs that use their platform. SKLZ has no say in it and current market trends is still gearing games towards gamers age 18-40.
+
+I see no way that SKLZ can maintain their current promises to investors.
+
+---
+
+But /u/jraywang, you say, SKLZ's revenues have already doubled this year and their financials are great!
+
+Yes. I agree that they have a solid balance sheet. Their cash is at ~$260M and their liabilities are at $50M. This is a great assets to liabilities ratio. Also, it is true that their revenues grew by 92% in 2020 which indicates that they might be able to do it again for 2021. Part of this can be attributed to COVID, but part of it, we must give SKLZ credit.
+
+Though, one thing that worries me, you can find in their income statement: **their marketing expense** ([source](https://finance.yahoo.com/quote/SKLZ/financials/)).
+
+From 2019 to 2020, their marketing expense went up by **250%** (from ~$100M to ~$250M which is more than their total revenue)
+
+As a result, they increased revenues by **92%** (from $120M to $230M).
+
+Not only did they have COVID tailwinds, but they had insane marketing, yet were unable to recoup their expense through revenue expansion. This is fine **if** they can get their users to stick to their platforms. 
+
+**One HUGE call out I want to make: their user is not the gamer. Their user is the game developer.**
+---
+
+And 99% of mobile game developers fail to profit ([source](https://www.businessinsider.com/why-999-of-all-mobile-games-are-not-profitable-the-6-things-mobile-game-developers-must-do-to-survive-2012-2)).",35,0.75
