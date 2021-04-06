@@ -28,7 +28,7 @@ def main() -> None:
         for row in tickers: 
             tick.append(row[0])
 
-    data,sub = get_data(reddit,'stocks')
+    data,sub = get_data(reddit,'investing')
     print_csv(data,sub, tick)
 
     #df = pd.read_csv('tickers_n.csv',index=False)
