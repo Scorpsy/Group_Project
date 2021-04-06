@@ -28,7 +28,7 @@ def main() -> None:
         for row in tickers: 
             tick.append(row[0])
 
-    data,sub = get_data(reddit,'investing')
+    data,sub = get_data(reddit,'stocks')
     print_csv(data,sub, tick)
 
     #df = pd.read_csv('tickers_n.csv',index=False)
@@ -88,9 +88,9 @@ def get_data(reddit, sub):
 
             todays_d = dt.date.today()
 
-            if utc_time.date() == todays_d:
-                post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
-                data.append(post)
+            #if utc_time.date() == todays_d:
+            post = Posts(submission.title,submission.selftext,utc_time,submission.ups,submission.upvote_ratio)
+            data.append(post)
 
     return data,sub
 
